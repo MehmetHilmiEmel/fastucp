@@ -17,7 +17,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Framework :: FastAPI",
 ]
-# BAĞIMLILIKLARI GÜNCELLEDİM 👇
+
 dependencies = [
     "fastapi>=0.100.0",
     "uvicorn>=0.20.0",
