@@ -21,8 +21,8 @@ classifiers = [
 dependencies = [
     "fastapi>=0.100.0",
     "uvicorn>=0.20.0",
-    "pydantic>=2.5.0",        # Google modelleri v2 gerektirir!
-    "email-validator>=2.0.0", # Pydantic EmailStr için şart
+    "pydantic>=2.5.0",      
+    "email-validator>=2.0.0", 
     "requests>=2.30.0"
 ]
 
