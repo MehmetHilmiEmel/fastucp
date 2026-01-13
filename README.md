@@ -5,9 +5,8 @@
 FastUCP is a high-performance, developer-friendly Python framework for building UCP-compliant Merchant Servers and Commerce Agents. It combines the strict compliance of **Google's Official UCP SDK models** with the intuitive developer experience of **FastAPI**.
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Alpha-orange)]()
-
 ## 🌟 Why FastUCP?
 
 The Universal Commerce Protocol involves complex JSON schemas, rigorous validation rules, and deep object nesting. **FastUCP** abstracts this complexity away.
