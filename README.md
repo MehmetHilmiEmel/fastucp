@@ -30,7 +30,7 @@ uv add fastucp
 
 ## ⚡️ Quick Start
 Here is a minimal Merchant Server ("Hello World") that sells a single item. FastUCP handles the manifest generation, endpoint routing, and protocol headers automatically.
-```
+```python
 # main.py
 from fastucp import FastUCP
 from fastucp.shortcuts import CheckoutBuilder
@@ -39,29 +39,25 @@ from fastucp.types import CheckoutCreateRequest
 # 1. Initialize the App
 app = FastUCP(
     title="Hello World Store", 
-    base_url="[http://127.0.0.1:8000](http://127.0.0.1:8000)"
+    base_url="http://127.0.0.1:8000"
 )
 
-# 2. Define a Checkout Endpoint
-# The @app.checkout decorator automatically registers the capability 
-# to the /.well-known/ucp manifest.
 @app.checkout("/checkout-sessions")
 def create_session(payload: CheckoutCreateRequest):
     
-    # 3. Use the Builder (Magic happens here ✨)
-    # The builder handles math (totals) and complex UCP object construction.
+
     cart = CheckoutBuilder(app, session_id="demo_session_1")
     
-    # Add a simple item (Price is in cents: 2000 = $20.00)
+    
     cart.add_item(
         item_id="sku_1",
         title="Hello World T-Shirt",
         price=2000, 
         quantity=1,
-        img_url="[https://placehold.co/400](https://placehold.co/400)"
+        img_url="https://placehold.co/400"
     )
     
-    # 4. Build & Return the official UCP Response
+    
     return cart.build()
 
 if __name__ == "__main__":
