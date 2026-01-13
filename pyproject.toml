@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastucp"
+version = "0.1.0"
+description = "FastAPI based implementation of Universal Commerce Protocol"
+authors = [
+  { name="Mehmet Hilmi Emel", email="mehmethilmi81@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: FastAPI",
+]
+# BAĞIMLILIKLARI GÜNCELLEDİM 👇
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.20.0",
+    "pydantic>=2.5.0",        # Google modelleri v2 gerektirir!
+    "email-validator>=2.0.0", # Pydantic EmailStr için şart
+    "requests>=2.30.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MehmetHilmiEmel/fastucp"
+"Bug Tracker" = "https://github.com/MehmetHilmiEmel/fastucp/issues"
