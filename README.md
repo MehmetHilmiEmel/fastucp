@@ -95,8 +95,3 @@ app.add_payment_handler(
 
 3. AI Agent Ready (MCP)
 FastUCP servers are designed to be easily consumed by LLM Agents (Claude, Gemini, OpenAI) via the Model Context Protocol (MCP), bridging the gap between traditional e-commerce and AI Agents.
-
-
-
-📄 License
-This project is licensed under the Apache 2.0 License.
