@@ -22,10 +22,10 @@ The Universal Commerce Protocol involves complex JSON schemas, rigorous validati
 
 ```bash
 # Using pip
-pip install fastucp
+pip install fastucp-python
 
 # Using uv (Recommended)
-uv add fastucp
+uv add fastucp-python
 ```
 
 ## ⚡️ Quick Start

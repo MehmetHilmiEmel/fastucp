@@ -3,8 +3,8 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fastucp"
-version = "0.1.0"
+name = "fastucp-python"
+version = "0.1.1"
 description = "FastAPI based implementation of Universal Commerce Protocol"
 authors = [
   { name="Mehmet Hilmi Emel", email="mehmethilmi81@gmail.com" },
@@ -29,3 +29,8 @@ dependencies = [
 [project.urls]
 "Homepage" = "https://github.com/MehmetHilmiEmel/fastucp"
 "Bug Tracker" = "https://github.com/MehmetHilmiEmel/fastucp/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]  
+include = ["fastucp*"] 
+exclude = ["example*", "tests*", "docs*"]  
