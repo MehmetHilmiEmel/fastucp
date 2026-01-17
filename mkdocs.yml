@@ -1,0 +1,52 @@
+site_name: FastUCP Docs
+site_url: https://example.com/fastucp
+repo_url: https://github.com/MehmetHilmiEmel/fastucp
+repo_name: FastUCP
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+  palette:
+    - scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [.] 
+          options:
+            show_root_heading: true
+            show_source: true
+            show_category_heading: true
+
+nav:
+  - Home: index.md
+  - User Guide:
+      - Installation: user-guide/installation.md
+      - Tutorial (Build a Store): user-guide/tutorial.md
+      - Checkout Builder: user-guide/checkout-builder.md
+  - Advanced:
+      - AI Agents (MCP): advanced/mcp-agents.md
+      - Security & Signing: advanced/security.md
+  - API Reference:
+      - FastUCP App: api/core.md
+      - Builders: api/builders.md
+      - Types & Models: api/types.md

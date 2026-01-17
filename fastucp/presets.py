@@ -1,4 +1,3 @@
-# fastucp/presets.py
 from typing import Optional
 from pydantic import AnyUrl
 from .models.schemas.shopping.types.payment_handler_resp import PaymentHandlerResponse
