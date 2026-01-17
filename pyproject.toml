@@ -33,4 +33,4 @@ dependencies = [
 [tool.setuptools.packages.find]
 where = ["."]  
 include = ["fastucp*"] 
-exclude = ["example*", "tests*", "docs*","all_project_codes.txt","export_code.py"]  
+exclude = ["example*", "tests*", "docs*","all_project_codes.txt","export_code.py", "venv"]  
