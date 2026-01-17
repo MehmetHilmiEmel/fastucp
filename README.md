@@ -38,7 +38,7 @@ from fastucp import FastUCP
 # 1. Initialize the App
 app = FastUCP(
     title="Hello World Store", 
-    base_url="[http://127.0.0.1:8000](http://127.0.0.1:8000)"
+    base_url="http://127.0.0.1:8000"
 )
 
 # Mock Database
